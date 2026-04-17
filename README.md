@@ -1,4 +1,4 @@
-# API Sentinel
+# RunSight
 
 Production-ready Turborepo monorepo for a full-stack API monitoring tool.
 
