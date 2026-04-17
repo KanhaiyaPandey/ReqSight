@@ -2,7 +2,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, ensure you have the backend API running. See the API README for setup instructions.
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -16,7 +18,18 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Dashboard Features
+
+The dashboard at `/dashboard` displays real-time API analytics including:
+
+- **Metrics Cards**: Total requests, average response time, and error rate
+- **Requests Chart**: Visual representation of requests per minute
+- **Logs Table**: Recent API logs with method, URL, status, and response time
+- **Errors Table**: Recent error logs highlighted in red
+
+The dashboard fetches data from the backend API at `http://localhost:5000`.
+
+You can start editing the page by modifying `app/dashboard/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load Inter, a custom Google Font.
 
